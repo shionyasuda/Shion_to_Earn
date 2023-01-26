@@ -17,15 +17,29 @@ body {
     margin: 0 auto;
     font-family: sans-serif;
 }
-#comment-box, #post {
-  border: none;
-  border-radius: 5px;
-}
-#post:hover{
-  background-color: deeppink;
-}
 
 #img {
   display: flex;
   justify-content: center;
+}
+.container {
+	max-width: 30pxx;
+	margin: 30px auto;
+	border-radius: 8px;
+	padding: 20px;
+}
+p{
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  p{
+    color: black;
+   }
+}
+
+@media screen and (max-width: 480px) {
+  p{
+    color: black;
+   }
 }

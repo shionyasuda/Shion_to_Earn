@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Chetpayark Karoonporn</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,17 +17,28 @@
         <img src="./img/S__20480079.jpg" width="200" height="280">
         <p>New Glasses Brothers</p>
 
-        <input type="text" id="comment-box" placeholder="Enter comment">
-    <button id="post">Post</button>
-    <ul id="unordered">
-       
-   </ul>
+        
    
-    <script src="code.js"></script>
+   <section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
 
 
 
-    </div>
-       
+    </div>    
 </body>
 </html>
