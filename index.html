@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,23 +7,36 @@
     <meta name="viewport" content="width=device-width">
     <title>Chetpayark Karoonporn</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.js">
 </head>
- <body>
-    <div>
-        <h1>일본여행 추억 in my phone</h1>
-        <p>누나 일본에 와줘서 너무 고마워. 그리고 너무 너무 사랑해🐧</p>
+<body>
+    <script>
+        // Define the correct password
+        var correctPassword = "broccoli";
+
+        // Prompt the user for the password
+        var password = prompt("Enter the password: password is name of SAKURA tree");
+
+        // Check if the entered password is correct
+        if (password === correctPassword) {
+            // Display the content of the website
+            document.body.innerHTML = `
+            <!-- Your website content here -->
+                <div>
+        <h1>사랑하는 우리 누나 비밀번호 성공!!!ㅋㅋ</h1>
+        <p>우리 아이가 많이 성장 했어요~~~</p>
         <div style="display: flex;">
-          <img src="img/7AC19380-127A-4241-926C-ED664C6607CA.jpg" style="margin-right: 10px; width="280" height="300">
-          <img src="img/8BA243E8-F420-475B-B070-47D399D92800.jpg" style="margin-right: 10px; idth="280" height="300">
-          <img src="img/A73F8903-4CB6-43BE-AB7D-C7D87D38E9BE.jpg" style="margin-right: 10px; width="280" height="300">
-          <img src="img/B407F360-D602-4C00-975E-6A809ECC6927.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/267EFEB2-0C2B-4ED0-9FF6-3E0BCFA4384F.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/DA0FFDAA-4F0D-43EF-8579-B04F58D53E84.jpg" style="margin-right: 10px; idth="280" height="300">
+          <img src="img/D3BD193D-5DB1-4516-9DF2-1E5368661D5C.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/4EBA2EE2-7723-40C8-9885-71F209E37E4B.jpg" style="margin-right: 10px; width="280" height="300">
         </div> 
         <p>  </p>
         <div style="display: flex;">
-          <img src="img/CA39DE26-4154-4745-965B-277DC1F2AB0C.jpg" style="margin-right: 10px; idth="280" height="300">
-          <img src="img/F7F72FD4-E2BD-4325-9F9D-03FFC65BC4F9.jpg" style="margin-right: 10px; width="280" height="300">
-          <img src="img/FD5CC905-CE2E-4BEA-A4A5-E3168F511017.jpg" style="margin-right: 10px; width="280" height="300">
-          <img src="img/E31856C1-CDF4-499D-8F74-0C9420CA684A.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/A2BA89E5-D1AB-4669-B3ED-21E3CB0D6138.jpg" style="margin-right: 10px; idth="280" height="300">
+          <img src="img/303A83E8-F755-4197-BF1F-A45877BB187E.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/7A99D66D-A73D-42D7-B9EF-34C23BB7C023.jpg" style="margin-right: 10px; width="280" height="300">
+          <img src="img/0E5FCFEF-04B4-4B0E-BF64-1BE5A8A55504.jpg" style="margin-right: 10px; width="280" height="300">
         </div>  
 
         <h1 #kk>우리기 미래에 하는 리스트 </h1>
@@ -30,10 +44,19 @@
         <h3>・Fishing</h3>
         <h3>・Golf</h3>
         <h3>・Diving</h3>
+        <h3>・hugging forever</h3>
 
         <h1 class="red">우리가 안하는것</h1>
         <h3 class="red">throwing up wine on my face..</h3>
        
-        <h1>다시 만나자!!!!</h1>
+        <h1>6월에 일본에서 만나~~</h1>
+        
+                <!-- Rest of your website content -->
+            `;
+        } else {
+            // Display an error message
+            alert("Incorrect password. Please try again.");
+        }
+    </script>
 </body>
 </html>
